@@ -17,7 +17,7 @@ connect to an external PostgreSQL instance where the backend plugins can store
 their state, rather than using SQLite.
 
 This section assumes that an [app](https://backstage.io/docs/getting-started/create-an-app)
-has already been created with `@backstage/create-app`, in which the frontend is
+has already been created with `@backstage/create-backstage-app`, in which the frontend is
 bundled and served from the backend. This is done using the
 `@backstage/plugin-app-backend` plugin, which also injects the frontend
 configuration into the app. This means that you only need to build and deploy a
@@ -54,7 +54,7 @@ yarn build
 ```
 
 Once the host build is complete, we are ready to build our image. The following
-`Dockerfile` is included when creating a new app with `@backstage/create-app`:
+`Dockerfile` is included when creating a new app with `@backstage/create-backstage-app`:
 
 ```Dockerfile
 FROM node:16-bullseye-slim
@@ -103,7 +103,7 @@ executed with the root of the repo as the build context, in order to get access
 to the root `yarn.lock` and `package.json`, along with any other files that
 might be needed, such as `.npmrc`.
 
-The `@backstage/create-app` command adds the following `.dockerignore` in the
+The `@backstage/create-backstage-app` command adds the following `.dockerignore` in the
 root of the repo to speed up the build by reducing build context size:
 
 ```text

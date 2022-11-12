@@ -27,7 +27,7 @@ import createApp from './createApp';
 
 const main = (argv: string[]) => {
   program
-    .name('backstage-create-app')
+    .name('create-backstage-app')
     .version(version)
     .description('Creates a new app in a new directory or specified path')
     .option(

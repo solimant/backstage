@@ -10,7 +10,8 @@ to use TechDocs.
 If you haven't setup Backstage already, start
 [here](../../getting-started/index.md).
 
-> If you used `npx @backstage/create-app`, TechDocs may already be present.
+> If you used `npx @backstage/create-backstage-app` or `yarn create @backstage/backstage-app`,
+TechDocs may already be present.
 >
 > You should skip to [`Setting the Configuration`](#setting-the-configuration)
 > below.

@@ -14,7 +14,7 @@ it, and validating it. These processors are configured under the
 ### Static Location Configuration
 
 The simplest configuration for the catalog, as shown in the default
-`@backstage/create-app` template, is to declaratively add locations pointing to
+`@backstage/create-backstage-app` template, is to declaratively add locations pointing to
 YAML files with [static configuration](../../conf/index.md).
 
 Locations are added to the catalog under the `catalog.locations` key:

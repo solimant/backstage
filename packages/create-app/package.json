@@ -1,5 +1,5 @@
 {
-  "name": "@backstage/create-app",
+  "name": "@backstage/create-backstage-app",
   "description": "A CLI that helps you create your own Backstage app",
   "version": "0.4.34-next.2",
   "publishConfig": {
@@ -20,7 +20,7 @@
   "license": "Apache-2.0",
   "main": "dist/index.cjs.js",
   "bin": {
-    "backstage-create-app": "bin/backstage-create-app"
+    "create-backstage-app": "bin/create-backstage-app"
   },
   "scripts": {
     "build": "backstage-cli package build",
@@ -54,7 +54,7 @@
   },
   "nodemonConfig": {
     "watch": "./src",
-    "exec": "bin/backstage-create-app",
+    "exec": "bin/create-backstage-app",
     "ext": "ts"
   },
   "files": [

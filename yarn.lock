@@ -3769,9 +3769,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@backstage/create-app@workspace:*, @backstage/create-app@workspace:packages/create-app":
+"@backstage/create-backstage-app@workspace:*, @backstage/create-backstage-app@workspace:packages/create-app":
   version: 0.0.0-use.local
-  resolution: "@backstage/create-app@workspace:packages/create-app"
+  resolution: "@backstage/create-backstage-app@workspace:packages/create-app"
   dependencies:
     "@backstage/cli": "workspace:^"
     "@backstage/cli-common": "workspace:^"
@@ -3791,7 +3791,7 @@ __metadata:
     recursive-readdir: ^2.2.2
     ts-node: ^10.0.0
   bin:
-    backstage-create-app: bin/backstage-create-app
+    create-backstage-app: bin/create-backstage-app
   languageName: unknown
   linkType: soft
 
@@ -34966,7 +34966,7 @@ __metadata:
   dependencies:
     "@backstage/cli": "workspace:*"
     "@backstage/codemods": "workspace:*"
-    "@backstage/create-app": "workspace:*"
+    "@backstage/create-backstage-app": "workspace:*"
     "@backstage/errors": "workspace:^"
     "@changesets/cli": ^2.14.0
     "@manypkg/get-packages": ^1.1.3

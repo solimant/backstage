@@ -17,7 +17,8 @@ be mapped to user identities within Backstage.
 > See [providers](../reference/plugin-auth-backend.providers.md)
 > for a full list of auth providers and their built-in sign-in resolvers.
 
-Backstage projects created with `npx @backstage/create-app` come configured with a
+Backstage projects created with `npx @backstage/create-backstage-app` or
+`yarn create @backstage/backstage-app` come configured with a
 sign-in resolver for GitHub guest access. This resolver makes all users share
 a single "guest" identity and is only intended as a minimum requirement to quickly
 get up and running. You can replace `github` for any of the other providers if you need.

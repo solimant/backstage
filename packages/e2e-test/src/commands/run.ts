@@ -159,7 +159,7 @@ async function buildDistWorkspace(workspaceName: string, rootDir: string) {
   }
 
   // eslint-disable-next-line import/no-extraneous-dependencies
-  appendDeps(require('@backstage/create-app/package.json'));
+  appendDeps(require('@backstage/create-backstage-app/package.json'));
 
   print(`Preparing workspace`);
   await runPlain([
@@ -167,7 +167,7 @@ async function buildDistWorkspace(workspaceName: string, rootDir: string) {
     'backstage-cli',
     'build-workspace',
     workspaceDir,
-    '@backstage/create-app',
+    '@backstage/create-backstage-app',
     ...createAppDeps,
   ]);
 
@@ -226,7 +226,7 @@ async function createApp(
   const child = spawnPiped(
     [
       'node',
-      resolvePath(workspaceDir, 'packages/create-app/bin/backstage-create-app'),
+      resolvePath(workspaceDir, 'packages/create-app/bin/create-backstage-app'),
       '--skip-install',
     ],
     {

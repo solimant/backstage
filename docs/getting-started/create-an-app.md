@@ -28,7 +28,13 @@ don't worry about the choice, it's easy to change later! Here is a
 The easiest way to run the create app package is with `npx`:
 
 ```bash
-npx @backstage/create-app
+npx @backstage/create-backstage-app
+```
+
+Or `yarn`:
+
+```bash
+yarn create @backstage/backstage-app
 ```
 
 This will create a new Backstage App inside the current folder. The name of the

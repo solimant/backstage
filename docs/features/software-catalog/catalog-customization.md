@@ -7,7 +7,7 @@ description: How to add custom filters or interface elements to the Backstage so
 
 The Backstage software catalog comes with a default `CatalogIndexPage` to filter
 and find catalog entities. This is already set up by default by
-`@backstage/create-app`.
+`@backstage/create-backstage-app`.
 
 If you want to change the default index page - such as to add a custom filter to
 the catalog - you can create your own `CatalogIndexPage`.

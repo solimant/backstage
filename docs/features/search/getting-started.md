@@ -10,7 +10,7 @@ use Search.
 If you haven't setup Backstage already, start
 [here](../../getting-started/index.md).
 
-> If you used `npx @backstage/create-app`, and you have a search page defined in
+> If you used `npx @backstage/create-backstage-app`, and you have a search page defined in
 > `packages/app/src/components/search`, skip to
 > [`Customizing Search`](#customizing-search) below.
 

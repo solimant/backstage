@@ -97,7 +97,7 @@ export const buildPackage = async (options: BuildOptions) => {
       console.warn(
         chalk.red(
           'Your root package.json contains a "resolutions" entry for "esbuild". This was ' +
-            'included in older @backstage/create-app templates in order to work around build ' +
+            'included in older @backstage/create-backstage-app templates in order to work around build ' +
             'issues that have since been fixed. Please remove the entry and run `yarn install`',
         ),
       );

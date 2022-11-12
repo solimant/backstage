@@ -7,7 +7,7 @@ CREATE_APP_TARGET_VERSION=$(curl -s https://raw.githubusercontent.com/backstage/
 if [ "$CURRENT_VERSION" == "$TARGET_VERSION" ]; then
     echo "Already up to date"
 else
-    echo "Attempting upgrade from Backstage $CURRENT_VERSION (create-app $CREATE_APP_CURRENT_VERSION) to $TARGET_VERSION ($CREATE_APP_TARGET_VERSION)"
+    echo "Attempting upgrade from Backstage $CURRENT_VERSION (create-backstage-app $CREATE_APP_CURRENT_VERSION) to $TARGET_VERSION ($CREATE_APP_TARGET_VERSION)"
     rm -rf .upgrade && mkdir .upgrade
     curl -s https://raw.githubusercontent.com/backstage/upgrade-helper-diff/master/diffs/$CREATE_APP_CURRENT_VERSION..$CREATE_APP_TARGET_VERSION.diff > .upgrade/upgrade.diff
     git apply -3 .upgrade/upgrade.diff

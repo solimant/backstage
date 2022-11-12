@@ -135,7 +135,7 @@ experience.
 
 As mentioned above, Backstage is not a packaged service that you can use out of
 the box. In order to get started with Backstage you need to use the
-`@backstage/create-app` package to create and customize your own Backstage app.
+`@backstage/create-backstage-app` package to create and customize your own Backstage app.
 
 In order to build a Docker image from your own app, you can use the
 `yarn build-image` command which is included out of the box in the app template.

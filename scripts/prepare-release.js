@@ -369,7 +369,7 @@ async function ensureCreateAppChangeset() {
     .filter(({ name }) => !excludeList.includes(name))
     .some(changeset =>
       changeset.releases.some(
-        release => release.name === '@backstage/create-app',
+        release => release.name === '@backstage/create-backstage-app',
       ),
     );
 
@@ -383,7 +383,7 @@ async function ensureCreateAppChangeset() {
   const fileName = `create-app-${ts}.md`;
   console.log(`Creating ${fileName}`);
   const data = `---
-'@backstage/create-app': patch
+'@backstage/create-backstage-app': patch
 ---\n
 Bumped create-app version.\n`;
   await fs.writeFile(path.join(changesetPath, fileName), data);
